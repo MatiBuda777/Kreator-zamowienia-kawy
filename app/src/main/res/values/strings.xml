@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kreator-zamowienia-kawy</string>
+    <string name="kreator_zamowienia_kawy">Kreator zamówienia kawy</string>
+    <string name="espresso">Espresso</string>
+    <string name="cappuccino">Cappuccino</string>
+    <string name="latte">Latte</string>
+    <string name="zloz_zamowienie">Złóż zamówienie!</string>
+    <string name="twoje_zamowienie">Twoje zamówienie:</string>
+    <string name="mleko">Mleko</string>
+    <string name="cukier">Cukier</string>
+    <string name="ile_kaw">Ilość kaw:</string>
+    <string name="bez_dodatkow">Bez dodatków</string>
+</resources>

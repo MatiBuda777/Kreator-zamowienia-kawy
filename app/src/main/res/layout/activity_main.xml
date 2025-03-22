@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kreator_zamowienia_kawy"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="#DBDBDB"
+        android:background="@color/coffee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lighterCoffee">
+        <RadioGroup
+            android:id="@+id/radioCoffee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:padding="2dp">
+
+            <RadioButton
+                android:id="@+id/coffeeEspresso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/espresso"
+                android:textColor="@color/dbWhite"/>
+
+            <RadioButton
+                android:id="@+id/coffeeCappuccino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cappuccino"
+                android:textColor="@color/dbWhite" />
+
+            <RadioButton
+                android:id="@+id/coffeeLatte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/latte"
+                android:textColor="@color/dbWhite" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkboxMilk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mleko"
+            android:textColor="@color/dbWhite"/>
+
+        <CheckBox
+            android:id="@+id/checkboxSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cukier"
+            android:textColor="@color/dbWhite"/>
+
+        <SeekBar
+            android:id="@+id/seekbarCoffeeNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="40"
+            android:progress="1"
+            android:thumbTint="@color/coffee"/>
+
+        <TextView
+            android:id="@+id/textCoffeeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/ile_kaw"
+            android:textColor="@color/dbWhite"/>
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/zloz_zamowienie"
+            android:textColor="@color/dbWhite"
+            android:backgroundTint="@color/button"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/milkyCoffee"
+            android:layout_marginTop="25dp"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/twoje_zamowienie"
+                android:textColor="@color/dbWhite"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:background="@color/choccyCoffee"/>
+
+            <ImageView
+                android:id="@+id/imageViewCoffee"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/capuccino"
+                android:contentDescription="@string/twoje_zamowienie"/>
+
+            <TextView
+                android:id="@+id/textCoffeeType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Kawa (brak)"
+                android:textColor="@color/choccyCoffee" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dodatki:"
+                android:textColor="@color/choccyCoffee" />
+
+            <TextView
+                android:id="@+id/textMilkAndSugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/bez_dodatkow"
+                android:textColor="@color/choccyCoffee" />
+
+            <TextView
+                android:id="@+id/textCoffeeNumber2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ile_kaw"
+                android:textColor="@color/choccyCoffee" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

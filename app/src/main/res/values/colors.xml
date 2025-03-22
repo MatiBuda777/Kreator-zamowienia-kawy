@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="coffee">#6F4E37</color>
+    <color name="lighterCoffee">#83655B</color>
+    <color name="milkyCoffee">#D5B9A6</color>
+    <color name="choccyCoffee">#713600</color>
+    <color name="dbWhite">#DBDBDB</color>
+    <color name="button">#4C8A3B</color>
+</resources>
